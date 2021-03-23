@@ -43,11 +43,12 @@ const drawText = () => {
     ctx.shadowColor = "#000000";
     ctx.shadowOffsetX = 4;
     ctx.shadowOffsetY = 4;
-    ctx.font = "70px Arial";
+    ctx.font = "3em Arial";
     ctx.fillStyle = "white";
     ctx.textAlign = "center";
     ctx.fillText("Bubble World", innerWidth / 2, innerHeight / 2);
 }
+
 /**
  * Animate the canvas content.
  */
@@ -65,5 +66,3 @@ const animate = () => {
 
 initCircles();
 animate();
-
-console.log(circleArray)

@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+
+canvas {
+    display: block;
+    background-color: #282a36;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    body {
+        font-size: 50px;
+    }
+}
