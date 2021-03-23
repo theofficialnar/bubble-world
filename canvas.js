@@ -43,7 +43,7 @@ const drawText = () => {
     ctx.shadowColor = "#000000";
     ctx.shadowOffsetX = 4;
     ctx.shadowOffsetY = 4;
-    // ctx.shadowBlur = 5;
+    ctx.shadowBlur = 5;
     ctx.font = "70px Arial";
     ctx.fillStyle = "white";
     ctx.textAlign = "center";

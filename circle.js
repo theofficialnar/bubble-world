@@ -41,7 +41,7 @@ window.addEventListener('mousemove', e => {
         ctx.shadowColor = "#000000";
         ctx.shadowOffsetX = 6;
         ctx.shadowOffsetY = 6;
-        // ctx.shadowBlur = 20;
+        ctx.shadowBlur = 20;
         ctx.fillStyle = this.color;
         ctx.fill();
 
