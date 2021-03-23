@@ -28,9 +28,9 @@ const initCircles = () => {
     for (let index = 0; index < circlesToGenerate; index++) {
         const radius = Math.floor(Math.random() * 5 + 2);
         let x = Math.floor(Math.random() * (innerWidth - radius * 2) + radius);
-        let dx = Math.floor((Math.random() - 1) * 3);
+        let dx = (Math.random() - 0.5) * 3;
         let y = Math.floor(Math.random() * (innerHeight - radius * 2) + radius);
-        let dy = Math.floor((Math.random() - 1) * 3);
+        let dy = (Math.random() - 0.5) * 3;
 
         circleArray.push(new Circle(ctx, x, y, dx, dy, radius));
     }
