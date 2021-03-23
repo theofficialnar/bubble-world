@@ -23,14 +23,14 @@ let circleArray = [];
 const initCircles = () => {
     if (circleArray.length) circleArray = [];
 
-    const circlesToGenerate = canvas.width * canvas.height / 5000;
+    const circlesToGenerate = Math.floor(canvas.width * canvas.height / 5000);
 
     for (let index = 0; index < circlesToGenerate; index++) {
-        const radius = Math.random() * 5 + 2;
-        let x = Math.random() * (innerWidth - radius * 2) + radius;
-        let dx = (Math.random() - 0.5) * 2;
-        let y = Math.random() * (innerHeight - radius * 2) + radius;
-        let dy = (Math.random() - 0.5) * 2;
+        const radius = Math.floor(Math.random() * 5 + 2);
+        let x = Math.floor(Math.random() * (innerWidth - radius * 2) + radius);
+        let dx = Math.floor((Math.random() - 1) * 3);
+        let y = Math.floor(Math.random() * (innerHeight - radius * 2) + radius);
+        let dy = Math.floor((Math.random() - 1) * 3);
 
         circleArray.push(new Circle(ctx, x, y, dx, dy, radius));
     }
@@ -43,7 +43,7 @@ const drawText = () => {
     ctx.shadowColor = "#000000";
     ctx.shadowOffsetX = 4;
     ctx.shadowOffsetY = 4;
-    ctx.shadowBlur = 5;
+    // ctx.shadowBlur = 5;
     ctx.font = "70px Arial";
     ctx.fillStyle = "white";
     ctx.textAlign = "center";
@@ -66,3 +66,5 @@ const animate = () => {
 
 initCircles();
 animate();
+
+console.log(circleArray)
